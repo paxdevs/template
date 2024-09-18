@@ -20,6 +20,9 @@ add_library(paxtemplate SHARED main.cpp)
 # Set the optimization level
 target_compile_options(paxtemplate PRIVATE -O3 -Wall -Wextra -flto)
 
+# Set the link options
+target_link_options(paxdemo PRIVATE -static-libstdc++ -static-libgcc)
+
 # Link against the libpax library
 target_link_libraries(paxtemplate PRIVATE libpax)
 
