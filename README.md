@@ -12,7 +12,11 @@ Install docker for the build environment.
 ## Building
 Run `./docker-build.sh` to build. The output file will be at `build/libyour_project_name.so`
 
+## Documentation
+You may wish to consult [this](https://github.com/paxdevs/s920docs) in case you run into issues.
+
 ## Connecting to the device
+
 ### USB
 Connect the USB cable to your computer. In the Main Menu, set the XCB mode to USB
 ### WiFi
