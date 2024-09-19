@@ -1,6 +1,8 @@
 
-#include "fb.h"
-#include "keypad.h"
+#include "pax/fb.h"
+#include "pax/keypad.h"
+#include "pax/touchscreen.h"
+#include "pax/sound.h"
 
 #include <fcntl.h>
 #include <sys/mman.h>
@@ -14,5 +16,7 @@ int app_start()
 {
     PAXFramebuffer fb;
     PAXKeypad kp;
+    PAXTouchscreen ts;
+    PAXSound snd;
     return 0;
 }
